@@ -6,7 +6,7 @@ Um template de projeto padrão utilizando o Gulp
 É necessário instalar o Gulp e o Bower para que tudo funcione:
 
 ```
-$ sudo npm install  gulp-cli bower
+$ sudo npm install -g gulp-cli bower
 ```
 
 
