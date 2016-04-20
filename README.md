@@ -34,3 +34,5 @@ Instale bibliotecas do Bower
 ```
 $ bower install
 ```
+
+Be happy!
