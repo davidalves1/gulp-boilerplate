@@ -2,8 +2,8 @@
 Um template de projeto padrão utilizando o Gulp - the streaming build system e o Bower - a package manager for the web
 
 ## Pré-requisitos:
-
-É necessário instalar o Gulp e o Bower para que tudo funcione:
+- Node.js, encontrado neste [link](https://nodejs.org/en/)
+- Gulp e o Bower, instalados com o comando:
 
 ```
 $ sudo npm install -g gulp-cli bower
