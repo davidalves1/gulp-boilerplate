@@ -1,9 +1,9 @@
 {
-  "name": "gulp-app",
-  "description": "Template de projeto padrão utilizando Gulp e Bower",
+  "name": "you-project-name",
+  "description": "Description of your project",
   "main": "index.js",
   "authors": [
-    "David Alves"
+    "Your Name"
   ],
   "license": "ISC",
   "keywords": [
