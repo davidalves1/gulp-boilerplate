@@ -3,7 +3,7 @@
 import gulp from 'gulp';
 import gutil from 'gulp-util';
 import uglify from 'gulp-uglify';
-import sass from 'gulp-sass';
+import stylus from 'gulp-stylus';
 import watch from 'gulp-watch';
 import plumber from 'gulp-plumber';
 import cleanCss from 'gulp-clean-css';
@@ -14,7 +14,7 @@ import babel from 'gulp-babel';
 gulp.task('minjs', function() {
     return gulp
         // Define a origem dos arquivos .js
-        .src(['src/js/**/*'])
+        .src(['src/js/**/*.js'])
         // Prevençãao de erros
         .pipe(plumber())
         // Suporte para o padrão ES6 
@@ -29,14 +29,14 @@ gulp.task('minjs', function() {
         .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('sass', function() {
+gulp.task('stylus', function() {
     return gulp
         // Define a origem dos arquivos .scss
-        .src('src/sass/**/*')
+        .src('src/stylus/**/*/.styl')
         // Prevençãao de erros
         .pipe(plumber())
         // Realiza o pré-processamento para css
-        .pipe(sass())
+        .pipe(stylus())
         // Realiza a minificação do css
         .pipe(cleanCss())
         // Altera a extenção do arquivo
@@ -48,7 +48,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
     gulp.start('default')
     gulp.watch('src/js/**/*.js', ['minjs'])
-    gulp.watch('src/sass/**/*.scss', ['sass'])
+    gulp.watch('src/stylus/**/*.styl', ['stylus'])
 });
 
-gulp.task('default', ['minjs', 'sass']);
+gulp.task('default', ['minjs', 'stylus']);
