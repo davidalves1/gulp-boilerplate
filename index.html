@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gulp Boilerplate</title>
-        <link rel="stylesheet" href="dist/css/style.min.css">
-        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="jumbotron">
-                    <h1 class="text-center">Hello! :)</h1>
-                </div>
-            </div>
-        </div>
-        <script src="libs/jquery/dist/jquery.min.js"></script>
-        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Boilerplate</title>
+    <!-- <link rel="stylesheet" href="dist/css/style.min.css"> -->
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <hgroup>
+                <h1>your-site</h1>
+            </hgroup>
+        </header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Parent Page</a>
+                    <ul class="children">
+                        <li><a href="#">Child One</a></li>
+                        <li><a href="#">Child Two</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Another Page</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>This is a section 1</h1>
+            <p>This is a content on section 1</p>
+        </section> 
+        <section class="content">
+            <h1>This is a section 2</h1>
+            <p>This is a content on section 2</p>
+        </section> 
+        <section class="content">
+            <h1>This is a section 3</h1>
+            <p>This is a content on section 3</p>
+        </section>
+        <footer>
+            <div class="footer-left">Copyright@ 2017 your-name</div>
+            <div class="footer-right">Privacy Policy - About Us</div>
+        </footer>
+    </div>
+</body>
 </html>
