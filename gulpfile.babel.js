@@ -26,13 +26,13 @@ gulp.task('minjs', function() {
         // Altera a extenção do arquivo
         .pipe(concat('app.min.js'))
         // Salva os arquivos minificados na pasta de destino
-        .pipe(gulp.dest('public/js'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('stylus', function() {
     return gulp
         // Define a origem dos arquivos .scss
-        .src('src/stylus/**/*/.styl')
+        .src('src/stylus/**/*.styl')
         // Prevençãao de erros
         .pipe(plumber())
         // Realiza o pré-processamento para css
@@ -42,7 +42,7 @@ gulp.task('stylus', function() {
         // Altera a extenção do arquivo
         .pipe(concat('style.min.css'))
         // Salva os arquivos processados na pasta de destino
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('watch', function() {

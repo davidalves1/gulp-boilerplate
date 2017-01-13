@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Web Boilerplate</title>
-    <!-- <link rel="stylesheet" href="dist/css/style.min.css"> -->
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -14,18 +14,21 @@
             </hgroup>
         </header>
         <nav>
-            <ul class="main-nav">
+            <ul id="top-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li>
                     <a href="#">Parent Page</a>
-                    <ul class="children">
+                    <ul>
                         <li><a href="#">Child One</a></li>
                         <li><a href="#">Child Two</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Another Page</a></li>
                 <li><a href="#">Contact</a></li>
+                <li class="icon">
+                    <a id="toogleButton">&#9776;</a>
+                </li>
             </ul>
         </nav>
         <section class="content">
@@ -42,7 +45,7 @@
         </section>
         <footer>
             <div class="footer-left">Copyright@ 2017 your-name</div>
-            <div class="footer-right">Privacy Policy - About Us</div>
+            <div class="footer-right">Privacy Policy - About</div>
         </footer>
     </div>
 </body>

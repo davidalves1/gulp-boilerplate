@@ -1,8 +1,97 @@
 @charset "UTF-8"
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
-*
+:root, html
     margin 0
     padding 0
+    line-height 1.6em
 
-p
-    font-size 18px
+body
+	font-family 'Lato', Tahoma, Arial, sans-serif
+	font-size 100%
+	
+header
+	padding 1em 0
+    margin 0px
+    float left
+    width 100%
+    
+	hgroup
+		width 100%
+		font-weight normal
+
+	a
+		text-decoration none
+		
+nav
+    display block
+    margin 0 0 2em
+    padding 0px
+    float left
+    width 100%
+    background-color #181919
+    ul
+    	margin 0
+	    padding 0
+    	list-style-type none
+	    overflow hidden
+	    background-color #333
+    	li
+	    	float left
+	    	&.icon
+	    		display none
+    		a
+                display inline-block
+                color #f2f2f2
+                text-align center
+                padding 14px 16px
+                text-decoration none
+                transition 0.3s
+                font-size 17px
+                cursor pointer
+        	&:hover
+        		background-color #555
+
+		
+.wrapper
+	font-size 0.8em /* 13px from 100% global font-size */
+	max-width 960px /* standard 1024px wide */
+	margin 0 auto
+	
+	footer
+	    width 98%
+	    float left
+	    padding 1%
+	    background-color white
+	    margin-top 2em
+		.footer-left 
+			width 45% 
+			float left
+			text-align left
+		.footer-right
+			width 45% 
+			float right
+			text-align right
+	
+@media screen and (max-width:680px)
+	ul
+		li:not(:first-child) 
+			display none
+	ul
+		li.icon 
+				float right
+				display inline-block
+		    
+@media screen and (max-width:680px)
+	ul.top-menu.responsive
+  		position relative
+  		li 
+			float none
+			display inline
+			a
+				display block
+				text-align left
+  			&.icon 
+			    position absolute
+			    right 0
+			    top 0

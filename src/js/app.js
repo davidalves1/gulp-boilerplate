@@ -1,7 +1,13 @@
 'use strict';
 
-const a = 2;
+const toogleButton = document.querySelector('toogleButton');
 
-let soma = (a, b) => a + b
+toogleButton.addEventListener('click', () => {
+	const menu = document.querySelector("#top-menu");
 
-soma(2,2);
+	console.log(menu.classList.contains('responsive'));
+    if (menu.classList.contains('responsive'))
+        menu.className = '';
+    else
+        menu.className = 'responsive';
+})
