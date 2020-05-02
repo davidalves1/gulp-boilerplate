@@ -1,24 +1,35 @@
 {
-  "name": "you-project-name",
+  "name": "gulp-boilerplate",
   "version": "1.0.0",
-  "description": "Description of your project",
   "main": "index.js",
+  "author": "davidalves1 <alves.david@outlook.com> (https://davidalves1.com)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx gulp watch",
+    "build": "npx gulp",
+    "clean": "npx gulp clean"
   },
-  "author": "Your Name",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "babel-core": "^6.13.2",
-    "babel-preset-es2015": "^6.13.2",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^2.0.6",
-    "gulp-concat": "^2.6.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5"
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.1",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }

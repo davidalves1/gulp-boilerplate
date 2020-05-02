@@ -1,2 +1,7 @@
 node_modules/
+<<<<<<< HEAD
 dist/
+=======
+dist/
+.vscode/
+>>>>>>> release/update-to-gulp-v4
